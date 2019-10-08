@@ -66,10 +66,7 @@ public class CustomListImpl implements CustomList {
 		return myList;
 		
 	}	
-	@Override
-	public CustomListNode getHeadNode() {
-		return headNode;
-	}
+	
 
 	
 	public void setHeadNode(CustomListNode headNode) {
@@ -98,7 +95,6 @@ public class CustomListImpl implements CustomList {
 		return listString.toString();
 	}
 
-	@Override
 	public CustomListNode getNodeFromEnd(int pPosition) {
 		CustomListNode aheadPointer, mainPointer ;
 		int i = 0;
@@ -201,6 +197,10 @@ public class CustomListImpl implements CustomList {
 		this.headNode=node;
 		
 		
+	}
+
+	public CustomListNode getHeadNode() {
+			return headNode;
 	}
 	
 }
